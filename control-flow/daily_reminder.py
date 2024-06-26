@@ -6,20 +6,20 @@ time_bound =input("Is it time-bound? (yes/no):").lower()
 
 match priority:
   case "high":
-    result = f"'{task}' is a high priority task"
+    reminder = f"'{task}' is a high priority task"
   case "medium":
-    result = f"'{task}' is a medium priority task"
+    reminder = f"'{task}' is a medium priority task"
   case "low":
-    result = f"'{task}' is a low priority task"
+    reminder = f"'{task}' is a low priority task"
   case _:
-    result = f"'{task}' has an unspecified priority"
+    reminder = f"'{task}' has an unspecified priority"
 
 if time_bound == "yes":
-  result += " that requires immediate attention today!"
-  print("Reminder:", result)
+  reminder += " that requires immediate attention today!"
+  print("Reminder:", reminder)
 elif time_bound == 'no':
-  result += ". Consider completing it when you have free time."
-  print("Note:", result)
+  reminder += ". Consider completing it when you have free time."
+  print("Note:", reminder)
 else:
-  result += ". (Time-bound status unspecified)"
-  print("Note:", result)
+  reminder += ". (Time-bound status unspecified)"
+  print("Note:", reminder)
