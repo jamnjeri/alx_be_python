@@ -2,7 +2,7 @@ task = input("Enter your task:")
 
 priority = input("Priority (high/medium/low):").lower()
 
-time_sensitivity =input("Is it time-bound? (yes/no):").lower()
+time_bound =input("Is it time-bound? (yes/no):").lower()
 
 match priority:
   case "high":
@@ -14,10 +14,10 @@ match priority:
   case _:
     result = f"'{task}' has an unspecified priority"
 
-if time_sensitivity == "yes":
+if time_bound == "yes":
   result += " that requires immediate attention today!"
   print("Reminder:", result)
-elif time_sensitivity == 'no':
+elif time_bound == 'no':
   result += ". Consider completing it when you have free time."
   print("Note:", result)
 else:
