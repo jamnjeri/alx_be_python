@@ -11,7 +11,5 @@ def perform_operation(num1, num2, operation):
      return product
    case "divide":
      if(num2 == 0):
-       return "Sorry, no number is divisible by 0"
-     else:
-       result = num1 / num2
-       return result
+       return "Error: Division by zero"
+     return num1 / num2
