@@ -27,9 +27,12 @@ def main():
                 print(f"{item} not found in shopping list.")
         elif choice == '3':
             # Display the shopping list
-            print("Shopping List:")
-            for item in shopping_list:
-                print(item)
+            if shopping_list:
+                print("Shopping List:")
+                for item in shopping_list:
+                    print(item)
+            else:
+                print("Shopping List is empty.")
         elif choice == '4':
             print("Goodbye!")
             break
