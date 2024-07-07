@@ -27,7 +27,7 @@ def main():
     else:
       print("Invalid choice entered")
   except ValueError:
-    print(f"Error: {e}. Please enter a numeric value for the temperature and 'C' or 'F' for the unit.")
+    print("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     main()
